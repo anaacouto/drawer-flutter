@@ -15,7 +15,7 @@ class First extends StatelessWidget{
     return new MaterialApp(
       home: new FirstPage(),
       routes: <String, WidgetBuilder>{
-        '/grid': (BuildContext context) => new second.Second(),
+        '/second': (BuildContext context) => new second.Second(),
         '/main': (BuildContext context) => new main.MyApp(),
         '/on1': (BuildContext context) => new one.One(),
         '/on2': (BuildContext context) => new two.Two(),
@@ -79,7 +79,7 @@ class FirstState extends State<FirstPage>{
                   new FlatButton(
                     child: new Text("Second"),
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/grid');
+                      Navigator.of(context).pushNamed('/second');
                     }
                   ),
               ],

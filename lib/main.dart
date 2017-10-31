@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       ),
       home: new MyHomePage(title: 'Drawer'),
       routes: <String, WidgetBuilder>{
-        '/grid': (BuildContext context) => new second.Second(),
+        '/second': (BuildContext context) => new second.Second(),
         '/first': (BuildContext context) => new first.First(),
       }
     );
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   new FlatButton(
                     child: new Text("Second"),
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/grid');
+                      Navigator.of(context).pushNamed('/second');
                     }
                   ),
               ],
@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       new GestureDetector(
                         onTap: () {
                           setState(() {
-                            Navigator.of(context).pushNamed("/grid");
+                            Navigator.of(context).pushNamed("/second");
                           });
                         },
                         child: new Icon(Icons.add),
