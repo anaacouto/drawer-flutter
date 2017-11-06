@@ -5,7 +5,7 @@ class Six extends StatefulWidget{
 }
 
 class SixState extends State<Six>{
-  @override
+  @Override
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: new AppBar(

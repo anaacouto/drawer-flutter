@@ -7,7 +7,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  @override
+
+  @Override
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Flutter Demo',
@@ -21,14 +22,17 @@ class MyApp extends StatelessWidget {
       }
     );
   }
+
 }
 
 class MyHomePage extends StatefulWidget {
+
   MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
 
-  @override
+  @Override
   _MyHomePageState createState() => new _MyHomePageState();
+
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -42,18 +46,18 @@ class _MyHomePageState extends State<MyHomePage> {
             margin: const EdgeInsets.all(8.0),
             child: new Column(
               children: <Widget>[
-                  new FlatButton(
-                    child: new Text("First"),
-                    onPressed: () {
-                      Navigator.of(context).pushNamed('/first');
-                    },
-                  ),
-                  new FlatButton(
-                    child: new Text("Second"),
-                    onPressed: () {
-                      Navigator.of(context).pushNamed('/second');
-                    }
-                  ),
+                new FlatButton(
+                  child: new Text("First"),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/first');
+                  },
+                ),
+                new FlatButton(
+                  child: new Text("Second"),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/second');
+                  }
+                ),
               ],
             ),
           ),
@@ -62,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  @override
+  @Override
   Widget build(BuildContext context) {
     return new Scaffold(
       drawer: drawer(),
@@ -115,4 +119,5 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
 }

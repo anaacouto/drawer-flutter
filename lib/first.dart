@@ -10,7 +10,7 @@ import './six.dart' as six;
 
 class First extends StatelessWidget{
 
-  @override
+  @Override
   Widget build(BuildContext context){
     return new MaterialApp(
       home: new FirstPage(),
@@ -34,20 +34,19 @@ class FirstPage extends StatefulWidget{
   FirstState createState() => new FirstState();
 
 }
+
 List<Container> _buildGrid(int count, BuildContext context){
   List<Container> containers = new List<Container>.generate(
     count,
     (int index) => new Container(
-        child: new FlatButton(
-          child: new Image.asset('assets/pic${index+1}.jpg'),
-          onPressed: () { Navigator.of(context).pushNamed("/on${index+1}"); }
-        ),
+      child: new FlatButton(
+        child: new Image.asset('assets/pic${index+1}.jpg'),
+        onPressed: () { Navigator.of(context).pushNamed("/on${index+1}"); }
+      ),
     ),
   );
   return containers;
 }
-
-
 
 Widget buildGrid(BuildContext context) {
   return new GridView.extent(
@@ -70,18 +69,18 @@ class FirstState extends State<FirstPage>{
             margin: const EdgeInsets.all(8.0),
             child: new Column(
               children: <Widget>[
-                  new FlatButton(
-                    child: new Text("Main"),
-                    onPressed: () {
-                      Navigator.of(context).pushNamed('/main');
-                    },
-                  ),
-                  new FlatButton(
-                    child: new Text("Second"),
-                    onPressed: () {
-                      Navigator.of(context).pushNamed('/second');
-                    }
-                  ),
+                new FlatButton(
+                  child: new Text("Main"),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/main');
+                  },
+                ),
+                new FlatButton(
+                  child: new Text("Second"),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/second');
+                  }
+                ),
               ],
             ),
           ),
@@ -90,7 +89,7 @@ class FirstState extends State<FirstPage>{
     );
   }
 
-  @override
+  @Override
   Widget build(BuildContext context){
     return new Scaffold(
       drawer: drawer(),
