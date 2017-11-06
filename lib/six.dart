@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 class Six extends StatefulWidget{
+
   SixState createState() => new SixState();
+
 }
 
 class SixState extends State<Six>{
+
   @Override
   Widget build(BuildContext context){
     return new Scaffold(
@@ -18,4 +21,5 @@ class SixState extends State<Six>{
       ),
     );
   }
+
 }
