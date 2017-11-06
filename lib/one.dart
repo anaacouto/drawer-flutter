@@ -35,7 +35,7 @@ class OneState extends State<One>{
                     new Container(
                       width: 40.0,
                       child: new Text(
-                        "SSSSS",
+                        "SSSS",
                         style: new TextStyle(
                           color: Colors.deepOrange,
                           fontSize: 14.0,
