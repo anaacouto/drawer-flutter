@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './second.dart' as second;
 import './first.dart' as first;
+import './drawer.dart';
 
 void main() {
   runApp(new MyApp());
@@ -37,39 +38,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  void drawer(){
-    return new Drawer(
-      child: new ListView(
-        children: <Widget>[
-          new Container(height: 200.0, color: Colors.blue),
-          new Container(
-            margin: const EdgeInsets.all(8.0),
-            child: new Column(
-              children: <Widget>[
-                new FlatButton(
-                  child: new Text("First"),
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/first');
-                  },
-                ),
-                new FlatButton(
-                  child: new Text("Second"),
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('/second');
-                  }
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   @Override
   Widget build(BuildContext context) {
     return new Scaffold(
-      drawer: drawer(),
+      drawer: new TestDrawer(),
       appBar: new AppBar(
         title: new Text(widget.title),
       ),

@@ -4,6 +4,10 @@ description: A new Flutter project.
 dependencies:
   flutter:
     sdk: flutter
+  collection: 1.14.3
+  intl: 0.15.1
+  string_scanner: 1.0.2
+  url_launcher: 0.4.2+5
 
 dev_dependencies:
   flutter_test:
