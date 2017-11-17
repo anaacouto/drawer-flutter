@@ -28,11 +28,25 @@ class TestDrawer extends StatelessWidget {
               margin: const EdgeInsets.all(4.0),
               padding: const EdgeInsets.all(4.0),
               child: new Text(
-                "Main",
+                "Pages",
                 style: new TextStyle(
-                  color: Colors.black,
                   fontWeight: FontWeight.w400,
                   fontSize: 18.0,
+                ),
+              ),
+            ),
+            onTap: () { /*...*/ }
+          ),
+          new GestureDetector(
+            child: new Container(
+              width: 280.0,
+              margin: const EdgeInsets.all(4.0),
+              padding: const EdgeInsets.all(4.0),
+              child: new Text(
+                "Main",
+                style: new TextStyle(
+                  fontWeight: FontWeight.w300,
+                  fontSize: 16.0,
                 ),
               ),
             ),
@@ -46,7 +60,6 @@ class TestDrawer extends StatelessWidget {
               child: new Text(
                 'First',
                 style: new TextStyle(
-                  color: Colors.black,
                   fontWeight: FontWeight.w300,
                   fontSize: 16.0,
                 ),
@@ -62,7 +75,6 @@ class TestDrawer extends StatelessWidget {
               child: new Text(
                 "Second",
                 style: new TextStyle(
-                  color: Colors.black,
                   fontWeight: FontWeight.w300,
                   fontSize: 16.0,
                 ),
@@ -79,7 +91,6 @@ class TestDrawer extends StatelessWidget {
               child: new Text(
                 "Sub Pages",
                 style: new TextStyle(
-                  color: Colors.black,
                   fontWeight: FontWeight.w400,
                   fontSize: 18.0,
                 ),

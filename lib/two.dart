@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:barcode_scan/barcode_scan.dart';
+import 'dart:async';
 
 class Two extends StatefulWidget{
 
@@ -7,6 +9,8 @@ class Two extends StatefulWidget{
 }
 
 class TwoState extends State<Two>{
+
+  String barcode = "";
 
   @Override
   Widget build(BuildContext context){
@@ -18,12 +22,21 @@ class TwoState extends State<Two>{
         child: new Center(
           child: new Column(
             children: <Widget> [
-              new Text("ola 2"),
+              new RaisedButton(
+                child: new Text("PRESS ME"),
+                onPressed: scan,
+              ),
+              new Text(barcode),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Future scan() async{
+    String barcode = await BarcodeScanner.scan();
+    setState(() => this.barcode = barcode);
   }
 
 }
