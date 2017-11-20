@@ -79,13 +79,14 @@ class OneState extends State<One>{
     );
   }
 
-  @Override
+  @override
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("Sub Page 1"),
       ),
       body: new Container(
+        color: Colors.grey[200],
         child: new Column(
           children: <Widget>[
             cardNoticias(),

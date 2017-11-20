@@ -5,6 +5,7 @@ dependencies:
   flutter:
     sdk: flutter
   barcode_scan: "^0.0.2"
+  url_launcher: "^1.0.1"
 
 dev_dependencies:
   flutter_test:

@@ -11,7 +11,7 @@ import './drawer.dart';
 
 class First extends StatelessWidget{
 
-  @Override
+  @override
   Widget build(BuildContext context){
     return new MaterialApp(
       home: new FirstPage(),
@@ -61,7 +61,7 @@ Widget buildGrid(BuildContext context) {
 
 class FirstState extends State<FirstPage>{
 
-  @Override
+  @override
   Widget build(BuildContext context){
     return new Scaffold(
       drawer: new TestDrawer(),
@@ -69,6 +69,7 @@ class FirstState extends State<FirstPage>{
         title: new Text("First Page"),
       ),
       body: new Container(
+        color: Colors.grey[200],
         child: new Center(
           child: buildGrid(context),
         ),

@@ -4,7 +4,7 @@ import './drawer.dart';
 
 class Second extends StatelessWidget{
 
-  @Override
+  @override
   Widget build(BuildContext context){
     return new MaterialApp(
       home: new SecondPage(),
@@ -94,7 +94,7 @@ class SecondPageState extends State<SecondPage>{
     );
   }
 
-  @Override
+  @override
   Widget build(BuildContext context){
     return new Scaffold(
       drawer: new TestDrawer(),
@@ -102,6 +102,7 @@ class SecondPageState extends State<SecondPage>{
         title: new Text("Page Two"),
       ),
       body: new Container(
+        color: Colors.grey[200],
         child: new Column(
           children: <Widget>[
             columnCard(context),

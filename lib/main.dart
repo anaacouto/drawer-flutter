@@ -9,7 +9,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
 
-  @Override
+  @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Flutter Demo',
@@ -31,14 +31,14 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
 
-  @Override
+  @override
   _MyHomePageState createState() => new _MyHomePageState();
 
 }
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  @Override
+  @override
   Widget build(BuildContext context) {
     return new Scaffold(
       drawer: new TestDrawer(),
@@ -46,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: new Text(widget.title),
       ),
       body: new Container(
+        color: Colors.grey[200],
         child: new Center(
           child: new ListView(
             children: <Widget>[
